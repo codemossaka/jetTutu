@@ -1,5 +1,6 @@
 package com.godsonpeya.jettutu.component
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
@@ -23,8 +24,7 @@ fun TransportCard(transportType: TransportType) {
             modifier = Modifier
                 .width(120.dp)
                 .height(70.dp)) {
-            Icon(painter = painterResource(id = transportType.imageId), contentDescription = "bed",
-                tint = Color.Blue)
+            Image(painter = painterResource(id = transportType.imageId), contentDescription = "bed")
             Text(text = transportType.name, color = Color.Blue)
         }
     }
